@@ -4,17 +4,17 @@ kind: Kustomization
 namespace: globomantics-hotel-dev
 
 resources:
-  - ../../base
-  - namespace.yaml
+- ../../base
+- namespace.yaml
 
 patchesStrategicMerge:
-  - ingress-patch.yaml
-  - configmap-patch.yaml
+- ingress-patch.yaml
+- configmap-patch.yaml
 
 images:
-  - name: openlabfree/globomantics-fe:v4
-    newName: ghcr.io/cloud-native-nepal/globomantics-hotel-frontend
-    newTag: 1c27f6512ba0d241216c29b1e07c3ce0068b3bb7
-  - name: openlabfree/globomantics-be:v7
-    newName: ghcr.io/cloud-native-nepal/globomantics-hotel-backend
-    newTag: 1c27f6512ba0d241216c29b1e07c3ce0068b3bb7
+- name: openlabfree/globomantics-be:v7
+  newName: ghcr.io/susmita-sharma/globomantics-hotel-backend
+  newTag: 4a63a1fbfb23cda13cfc2637529710efb9f2108e
+- name: openlabfree/globomantics-fe:v4
+  newName: ghcr.io/susmita-sharma/globomantics-hotel-frontend
+  newTag: 4a63a1fbfb23cda13cfc2637529710efb9f2108e
