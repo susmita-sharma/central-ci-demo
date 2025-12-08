@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: globomantics-hotel-dev
+
+resources:
+  - ../../base
+  - namespace.yaml
+
+patchesStrategicMerge:
+  - ingress-patch.yaml
+  - configmap-patch.yaml
+
+images:
+  - name: openlabfree/globomantics-fe:v4
+    newName: ghcr.io/cloud-native-nepal/globomantics-hotel-frontend
+    newTag: 1c27f6512ba0d241216c29b1e07c3ce0068b3bb7
+  - name: openlabfree/globomantics-be:v7
+    newName: ghcr.io/cloud-native-nepal/globomantics-hotel-backend
+    newTag: 1c27f6512ba0d241216c29b1e07c3ce0068b3bb7

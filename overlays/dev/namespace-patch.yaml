@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: globomantics-hotel-dev
+  labels:
+    environment: dev
+    app: globomantics-hotel
+
