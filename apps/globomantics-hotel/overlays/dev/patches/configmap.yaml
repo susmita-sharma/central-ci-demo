@@ -4,5 +4,5 @@ metadata:
   name: guestbook-frontend-config
 data:
   guestbook_name: "Blue Lake Hotel (Dev)"
-  backend_uri: "https://guestbook.backend.dev.hotel/guestbook"
+  backend_uri: "https://guestbook.backend.deepak.hotel/guestbook"
 
