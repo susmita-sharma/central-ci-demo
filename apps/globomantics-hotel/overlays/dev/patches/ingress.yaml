@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx  # Override default nginx if needed; traefik
   rules:
-  - host: guestbook.frontend.deepak.hotel
+  - host: guestbook.frontend.susmita.hotel
     http:
       paths:
       - path: /
@@ -20,7 +20,7 @@ spec:
             name: guestbook-frontend
             port:
               number: 80
-  - host: guestbook.backend.deepak.hotel
+  - host: guestbook.backend.susmita.hotel
     http:
       paths:
       - path: /
@@ -32,7 +32,7 @@ spec:
               number: 80
   tls:
     - hosts:
-        - guestbook.frontend.deepak.hotel
-        - guestbook.backend.deepak.hotel
+        - guestbook.frontend.susmita.hotel
+        - guestbook.backend.susmita.hotel
       secretName: guestbook-tls-secret
 

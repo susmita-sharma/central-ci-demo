@@ -16,9 +16,9 @@ patchesStrategicMerge:
 - patches/backend-deployment.yaml
 
 images:
-- name: openlabfree/globomantics-be:v7
-  newName: ghcr.io/cloud-native-nepal/globomantics-hotel-backend
+- name: susmita-sharma/globomantics-be:v7
+  newName: ghcr.io/susmita-sharma/globomantics-hotel-backend
   newTag: c4452ada299aaabe0ac07dda4f830072da9d9588
-- name: openlabfree/globomantics-fe:v4
-  newName: ghcr.io/cloud-native-nepal/globomantics-hotel-frontend
+- name: susmita-sharma/globomantics-fe:v4
+  newName: ghcr.io/susmita-sharma/globomantics-hotel-frontend
   newTag: c4452ada299aaabe0ac07dda4f830072da9d9588
